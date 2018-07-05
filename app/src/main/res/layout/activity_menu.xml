@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sanna.clinica.clinicasanna.MenuActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00a850"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SANNA"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_weight="@android:integer/config_shortAnimTime"
+            android:textSize="30dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:text="Bienvenidos"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:paddingTop="6dp"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:id="@+id/txtNombre"
+                android:textAlignment="viewEnd"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:paddingTop="6dp"/>
+
+            <ImageView
+                android:id="@+id/btnSalir"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/salir" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:weightSum="10"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:id="@+id/asistencia"
+                android:orientation="vertical">
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_weight="5"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/user_info_icon"
+                    android:id="@+id/btnPaciente"
+                    app:civ_border_color="#FF000000"
+                    >
+
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Mi cuenta"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/Ambulancia"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btnEmergencia"
+                    android:layout_width="120dp"
+                    android:layout_weight="5"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ambulancia"
+
+                    app:civ_border_color="#FF000000"
+                    >
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Emergencia"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:weightSum="10"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:id="@+id/perfil"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="5"
+                    android:id="@+id/btnHistorial"
+                    android:src="@drawable/asistencia"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="Mi historial médico"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/noticias"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_weight="5"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ubicaciones"
+                    android:id="@+id/btnUbicacion"
+                    app:civ_border_color="#FF000000"
+                    >
+
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicacion"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>

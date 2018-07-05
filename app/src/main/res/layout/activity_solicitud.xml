@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sanna.clinica.clinicasanna.SolicitudActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00a850"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solicitud de Ambulancia"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:layout_weight="@android:integer/config_shortAnimTime"
+            android:textSize="30dp"/>
+
+    </LinearLayout>
+    <ScrollView  android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="5"
+                android:text="!Las 24 hrs para ayudarte!"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:paddingTop="6dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutExterna"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorRed"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="start|fill_horizontal"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/asistencia"
+                android:orientation="horizontal">
+
+
+                <ImageView
+
+                    android:layout_width="139dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnExtrema"
+                    android:src="@drawable/extrema"
+                    android:minWidth="10dp"
+                    android:minHeight="5dp"
+                   >
+
+                </ImageView>
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtEspecialidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gravedad Externas"
+                        android:textColor="@color/colorwhite"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/txtDoctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Atención medica inmediata por peligro vital. (Accidente automovilistico)"
+                        android:textColor="@color/colorwhite"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorOrange"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="start|fill_horizontal"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="139dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mediana"
+                    >
+                </ImageView>
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gravedad Mediana"
+                        android:textColor="@color/colorwhite"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perdida de conciencia Crisis convulsiva"
+                        android:textColor="@color/colorwhite"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorInfo"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="start|fill_horizontal"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/asistencia1"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:layout_width="139dp"
+                    android:layout_height="match_parent"
+
+                    android:src="@drawable/severa"
+                    app:civ_border_color="#FF000000"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtEspecialidad1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gravedad Severa"
+                        android:textColor="@color/colorwhite"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/txtDoctor1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quemadura, hemorragias, fractura. (Caída, ...)"
+                        android:textColor="@color/colorwhite"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorGreen"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="start|fill_horizontal"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/asistencia2"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="139dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/leve">
+
+                </ImageView>
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gravedad Leve"
+                        android:textColor="@color/colorwhite"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cuadros respiratorios simples Fiebre en niños o mayores"
+                        android:textColor="@color/colorwhite"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
